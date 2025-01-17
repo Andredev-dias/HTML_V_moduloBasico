@@ -26,7 +26,7 @@
     section{
         height: 100vh;
         width: 100%;
-        padding: 10vh 20px 0px 20px;
+        padding: 0px 20px 0px 20px;
     }
     #s1{
         width: 100%;
@@ -35,7 +35,7 @@
         align-items: center;
         justify-content: center;
         gap: 4vh;
-        margin-bottom: 4vh;
+      
     }
     .wrap-slider{
         width: 800px;
@@ -49,7 +49,7 @@
         align-items: center;
         justify-content: center;
         gap: 4vh;
-        margin-bottom: 4vh;
+     
     }
     .card{
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -61,13 +61,24 @@
         align-items: center;
         justify-content: center;
         gap: 4vh;
-        margin-bottom: 4vh;
+
     }
     .form-style{
         width: 400px;
-        background-color: #ddddddb1;
+        /* background-color: #ddddddb1; */
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .form-control{
+        width: 100%;
+        min-width: 300px;
+        padding: 5px;
     }
     @media (width < 1000px){
         main{
@@ -80,6 +91,16 @@
     }
     .wrap-slider{
         width: 100%;
+    }
+    }
+    @media (width < 600px){
+        .form-style{
+        width: 100%;
+    }
+    .form-control{
+        width: 100%;
+        min-width: 250px;
+        padding: 5px;
     }
     }
   </style>
@@ -176,11 +197,22 @@
         <section id="s3">
             <h2>Section 03</h2>
             <form class="form-style" action="">
-                <img src="" alt="">
+                <img width="150px" height="auto" style="border-radius: 100%;" src="../Images/logoAplicado.png" alt="">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                    <input  type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
                   </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input   type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input   type="number" class="form-control" id="exampleFormControlInput1" placeholder="(00)000000000">
+                  </div>
+                  <button type="button" class="btn btn-outline-primary">Primary</button>
+                  <br>
+                  <p style="text-decoration: underline;">Esqueci minha senha</p>
             </form>
         </section>
         <section id="s4">
