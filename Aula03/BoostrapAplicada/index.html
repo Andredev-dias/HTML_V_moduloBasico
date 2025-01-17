@@ -42,6 +42,18 @@
         height: auto;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
+    #s2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4vh;
+        margin-bottom: 4vh;
+    }
+    .card{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
     @media (width < 1000px){
         main{
             padding-top: 10vh;
@@ -84,7 +96,7 @@
       </nav>
       <main>
         <section id="s1">
-            <h2>section 01</h2>
+            <h2>Section 01</h2>
             <div class="wrap-slider">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -115,13 +127,42 @@
             </div>
         </section>
         <section id="s2">
-            <h2>section 02</h2>
+            <h2>Section 02</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../Images/a01.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../Images/a02.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a short card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../Images/a03.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
         <section id="s3">
-            <h2>section 03</h2>
+            <h2>Section 03</h2>
         </section>
         <section id="s4">
-            <h2>section 04</h2>
+            <h2>Section 04</h2>
         </section>
       </main>
 </body>
